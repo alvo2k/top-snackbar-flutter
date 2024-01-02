@@ -98,9 +98,7 @@ void showTopSnackBar(
     },
   );
 
-  if (_previousEntry != null && _previousEntry!.mounted) {
-    _previousEntry?.remove();
-  }
+  _previousEntry?.remove();
 
   overlayState.insert(_overlayEntry);
   _previousEntry = _overlayEntry;
